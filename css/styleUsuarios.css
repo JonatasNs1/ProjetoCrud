@@ -1,0 +1,154 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* background-color: cornsilk; */
+}
+#cadastro{
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    height: auto;
+    min-height: 200px;
+    margin-top: 20px;
+    margin-bottom: 200px;
+   
+    /* border: solid 1px black; */
+}
+
+#cadastroTitulo{
+    width: inherit;
+ 
+    background-image: linear-gradient(to top, chocolate, #000000);
+    height: 50px;
+    color: #ffffff;
+    text-align: center;
+  border-radius: 25px;
+}
+
+#cadastroInformacoes{
+    width:inherit;
+    height: auto;
+    min-height: 200px;
+    /* background-color: #b5b5b3; */
+}
+
+.campo{
+    width: auto;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.informacoesPessoais  {
+    width: 270px;
+    height: 55px;
+    float: left;
+   
+    /* background-color: #ededed; */
+    text-align: right;
+    font-size: 1.1em;
+    padding-top: 10px;
+    padding-right: 30px;
+    margin-right: 10px;
+    
+}
+
+.entradaDeDados{
+    width: 600px;
+    height: auto;
+    margin-left: 10px;
+    padding-top: 10px;
+}
+
+.enviar input{
+    width:100px;
+    height: 45px;
+    background-color: #b5b5b3;
+    color: white;
+    margin-top: 30px;
+    margin-left: 200px;
+    font-size: 1.2em;
+}
+
+#consulta{
+    width: 700px;
+    min-height: 300px;
+    height: auto;
+    border: solid 1px black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    /* margin-bottom: 100px; */
+}
+
+/* #onsulta{
+    width: 100%;
+    min-height: 30px;
+    height: auto;
+} */
+
+#tableTitulo{
+    width: 100%;
+    height: 30px;
+    background-image: linear-gradient(to top, chocolate, #000000);
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.6em;
+   
+}
+
+#linhas{
+    width: 100%;
+    height: 50px;
+    border: solid 1px black;
+    background-color: crimson;
+}
+#tblLinhas{
+    width: 100%;
+    height: 50px;
+    border: solid 1px black;
+}
+
+.colunas{
+    width:100%;
+    height: 30px;
+    text-align: center;
+    background-color:cornsilk;
+    /* border: solid 1px black; */
+}
+
+.tblImagens{
+    width: auto;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+.excluir {
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin-left: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.editar{
+    float: left;
+    width: 30px;
+    height: 30px;
+   
+    margin-left: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.tblColunas {
+text-align: center;
+}
