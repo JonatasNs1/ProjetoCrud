@@ -8,12 +8,12 @@ const database =('dbCrud');
 
 
 // define ('SRC', $_SERVER['DOCUMENT_ROOT'].'/ds2t20212/jonatas/admin/'); 
-define ('SRC', $_SERVER['DOCUMENT_ROOT'].'/adminCrud/'); 
+define ('SRC', $_SERVER['DOCUMENT_ROOT'].'/admin/'); 
 
 // define ('SRCH', $_SERVER['DOCUMENT_ROOT'].'/ds2t20212/jonatas/admin/');
-define ('SRCH', $_SERVER['DOCUMENT_ROOT'].'/adminCrud/');
+define ('SRCH', $_SERVER['DOCUMENT_ROOT'].'/admin/');
 
-define ('SRCP', $_SERVER['DOCUMENT_ROOT'].'/adminCrud/');
+define ('SRCP', $_SERVER['DOCUMENT_ROOT'].'/admin/');
 
 const BD_MSG_EXCLUIR = "
 <script> 
@@ -32,7 +32,7 @@ const MAX_CARACTERES = "Não foi possivel fazer o cadastro, coloque um nome abai
 // define ('SRC', $_SERVER['DOCUMENT_ROOT'].'/usuarios/usuarios/'); 
 
 // define ('SRCO', $_SERVER['DOCUMENT_ROOT'].'/ds2t20212/jonatas/admin/'); 
-define ('SRCO', $_SERVER['DOCUMENT_ROOT'].'/adminCrud/'); 
+define ('SRCO', $_SERVER['DOCUMENT_ROOT'].'/admin'); 
 
 
 const BD_MSG_EXCLUIR_USUARIOS = "

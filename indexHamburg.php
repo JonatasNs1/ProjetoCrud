@@ -16,6 +16,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="css/styleHamburg.css">
     <script src="banner.js" defer> </script>
+    <script src="js/script.js" defer> </script>
     <title> Hamburgueria</title>
 </head>
 
