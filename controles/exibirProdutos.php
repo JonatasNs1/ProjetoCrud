@@ -3,6 +3,8 @@
 // require_once('../configuracoes/config.php');
 require_once(SRCP. 'bd/listarProdutos.php');
 require_once(SRCP. 'bd/listarCategorias.php');
+
+
 function exibirProdutos(){
     $dadosListar = listar();
     return $dadosListar;
@@ -13,7 +15,7 @@ function exibirProdutos(){
 //     return $dados;
 // }
 
-function buscarNomeProdutos($nome){
+function buscarNomeClientes($nome){
     $dados = buscarNome($nome);
 
     return $dados;

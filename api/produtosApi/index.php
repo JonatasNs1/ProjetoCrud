@@ -3,50 +3,55 @@
 require_once("vendor/autoload.php");
   require_once("../controles/exibirProdutos.php");
   require_once("../controles/exibirDadosCategorias.php");
+
     $app = new \Slim\App();
 
 
 
     $app->get('/produtos', function($request, $response, $args){
 
-        if(isset( $request ->getQueryParams()['nome'])) {
 
-        
+        if(isset( $request ->getQueryParams()['valor'])) 
+        {
+
             $nome = (string) null;
-            $nome = $request ->getQueryParams()['nome']; 
+            $nome = $request ->getQueryParams()['valor']; 
 
             if($listDados = buscarNomeProdutos($nome)){
-                // var_dump($listDados);
-                // die;
+
                     if( $listDadosArray = criarArray($listDados)){  
-                        // var_dump($listDadosArray);
-                        // die;
                              $listDadosJSON = criarJSON($listDadosArray);
                     }
             }
            
         }else{
-            if($listar =exibirProdutos()){
-
-                if($listarDadosArray = criarArray($listar)){
-                    $listarDadosJSON = criarJSON($listarDadosArray);
-                }
-            }
-            
-            
-            if($listarDadosArray){
-                return $response   ->withStatus(200) 
-                ->withHeader('Content-Type', 'application/json') 
-                ->write($listarDadosJSON);
-            }else{
-                return $response   ->withStatus(204); 
-            }
-          
-        }
+       
         
-      
+            if($listDados = exibirProdutos()){
+            
+                if( $listDadosArray = criarArray($listDados)){  
+                         $listDadosJSON = criarJSON($listDadosArray); 
+                }
+            } 
+        }
+
+        
+        if( $listDadosArray){ 
+            return $response   ->withStatus(200) 
+                               ->withHeader('Content-Type', 'application/json') 
+                               ->write($listDadosJSON); 
+
+        }else{
+                         return $response   ->withStatus(204); 
+                                            
+        }
+    
+          
+       
+        
         
     });
+
 
     $app->get('/produtos/{id}', function($request, $response, $args){ 
         $id = $args['id']; 
